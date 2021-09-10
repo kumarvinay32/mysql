@@ -1,0 +1,33 @@
+{
+  "name": "@krvinay/mysql",
+  "version": "1.0.1",
+  "description": "sequelize mysql package to migrate from persistent connection to sequelize pool connection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sequelize mysql",
+    "mysql",
+    "sequelize",
+    "migrate mysql to sequelize"
+  ],
+  "author": "Vinay Kumar",
+  "license": "MIT",
+  "homepage": "https://github.com/kumarvinay32/mysql",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarvinay32/mysql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kumarvinay32/mysql/issues"
+  },
+  "devDependencies": {
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.4"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {}
+}
