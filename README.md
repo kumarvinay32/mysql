@@ -303,15 +303,16 @@ as described [in the MySQL documentation](http://dev.mysql.com/doc/refman/5.5/en
 ## Transactions in Sync
 
 ```js
+var transConn = null;
 try{
-  var transConn = await connection.beginTransactionSync();
+  transConn = await connection.beginTransactionSync();
   var results = await transConn.querySync('INSERT INTO posts SET title=?', title);
   var log = 'Post ' + results.insertId + ' added';
   ..... more queries .....
   await transConn.commitSync();
   console.log('success!');
 } catch (error){
-  if(trans_id){
+  if(transConn){
     await transConn.rollbackSync();
   }
 }
