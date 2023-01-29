@@ -317,3 +317,17 @@ try{
   }
 }
 ```
+
+Isolations levels can be set per-transaction by passing isolationLevel to transaction. Default to `"READ COMMITTED"` but you can override the default isolation level by passing isolationLevel in beginTransactionSync.
+
+The possible isolations levels:
+
+"READ UNCOMMITTED",
+"READ COMMITTED",
+"REPEATABLE READ",
+"SERIALIZABLE"
+
+Pass in the desired level as the first argument:
+```js
+await connection.beginTransactionSync("READ COMMITTED");
+```
