@@ -1,6 +1,6 @@
 {
   "name": "@krvinay/mysql",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "sequelize mysql package to migrate from persistent connection to sequelize pool connection",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "url": "https://github.com/kumarvinay32/mysql/issues"
   },
   "devDependencies": {
-    "mysql2": "^2.2.5",
+    "mysql2": "^3.6.0",
     "sequelize": "^6.6.4"
   },
   "directories": {
